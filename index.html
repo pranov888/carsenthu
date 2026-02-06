@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Experience the world's most exclusive supercars, luxury vehicles, and tuned masterpieces. Your ultimate destination for automotive excellence.">
+    <title>RINNAE MOTORS | Elite Performance & Luxury Cars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="speedometer">
+                <div class="needle"></div>
+                <div class="speed-value">0</div>
+            </div>
+            <div class="loader-text">RINNAE MOTORS</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">RINNAE<span class="accent">MOTORS</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#gallery" class="nav-link" data-filter="all">Collection</a></li>
+                <li><a href="#gallery" class="nav-link" data-filter="supercar">Supercars</a></li>
+                <li><a href="#gallery" class="nav-link" data-filter="tuned">Performance</a></li>
+                <li><a href="#gallery" class="nav-link" data-filter="luxury">Luxury</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="particles" id="particles"></div>
+            <div class="speed-lines"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-slide-up">EXCLUSIVE COLLECTION</div>
+            <h1 class="hero-title">
+                <span class="word animate-word" style="--delay: 0.1s">DISCOVER</span>
+                <span class="word animate-word" style="--delay: 0.3s">TRUE</span>
+                <span class="word accent animate-word" style="--delay: 0.5s">LUXURY</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-in">Experience automotive perfection with the world's most exclusive
+                supercars, luxury vehicles, and tuned masterpieces.</p>
+            <div class="hero-stats animate-slide-up">
+                <div class="stat">
+                    <span class="stat-value" data-count="19">0</span>
+                    <span class="stat-label">Elite Vehicles</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" data-count="8500">0</span>
+                    <span class="stat-label">Combined HP</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" data-count="330">0</span>
+                    <span class="stat-label">Top Speed MPH</span>
+                </div>
+            </div>
+            <a href="#gallery" class="hero-cta animate-pulse">
+                <span>EXPLORE COLLECTION</span>
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7" />
+                </svg>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-header">
+            <span class="section-tag animate-slide-left">OUR FLEET</span>
+            <h2 class="section-title animate-reveal">
+                <span>LEGENDARY</span>
+                <span class="accent">MACHINES</span>
+            </h2>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs animate-fade-in">
+            <button class="filter-btn active" data-filter="all">All Cars</button>
+            <button class="filter-btn" data-filter="supercar">Supercars</button>
+            <button class="filter-btn" data-filter="tuned">Performance</button>
+            <button class="filter-btn" data-filter="luxury">Luxury</button>
+        </div>
+
+        <!-- Car Grid -->
+        <div class="car-grid" id="carGrid">
+            <!-- G Powered M5 F90 -->
+            <article class="car-card" data-category="tuned" data-aos="fade-up">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/g-power-m5/1.jpg" alt="G-Power M5 F90">
+                    <div class="card-overlay">
+                        <span class="card-badge tuned">TUNED</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">G-Power M5 F90</h3>
+                    <p class="card-desc">The ultimate BMW M5 transformation with 800+ HP</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">800 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">3.1s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">205 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- MANHART M5 F90 -->
+            <article class="car-card" data-category="tuned" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/manhart-m5/1.jpg" alt="MANHART MH5 F90">
+                    <div class="card-overlay">
+                        <span class="card-badge tuned">TUNED</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">MANHART MH5 F90</h3>
+                    <p class="card-desc">German engineering pushed to extreme limits</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">815 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.9s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">210 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- MANSORY BMW X7 -->
+            <article class="car-card" data-category="luxury" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/mansory-x7/1.jpg" alt="MANSORY BMW X7">
+                    <div class="card-overlay">
+                        <span class="card-badge luxury">LUXURY</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">MANSORY BMW X7</h3>
+                    <p class="card-desc">Aggressive luxury SUV masterpiece</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">650 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">3.8s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">180 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- MANSORY Ferrari SF90 -->
+            <article class="car-card" data-category="supercar" data-aos="fade-up">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/mansory-sf90/1.jpg" alt="MANSORY Ferrari SF90">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">SUPERCAR</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">MANSORY Ferrari SF90</h3>
+                    <p class="card-desc">Prancing horse with Mansory aggression</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">1100 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.4s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">220 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- MANSORY McLaren 720S -->
+            <article class="car-card" data-category="supercar" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/mansory-720s/1.jpg" alt="MANSORY McLaren 720S">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">SUPERCAR</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">MANSORY McLaren 720S</h3>
+                    <p class="card-desc">British precision meets German tuning</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">755 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.7s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">212 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- MANSORY XM -->
+            <article class="car-card" data-category="luxury" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/mansory-xm/1.jpg" alt="MANSORY BMW XM">
+                    <div class="card-overlay">
+                        <span class="card-badge luxury">LUXURY</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">MANSORY BMW XM</h3>
+                    <p class="card-desc">Hybrid beast with bold presence</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">900 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">3.2s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">190 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Koenigsegg RS -->
+            <article class="car-card featured" data-category="supercar" data-aos="fade-up">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/koenigsegg-rs/1.jpg" alt="Koenigsegg RS">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">HYPERCAR</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Koenigsegg RS</h3>
+                    <p class="card-desc">Swedish hypercar engineering at its finest</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">1360 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.5s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">278 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Jesko Attack -->
+            <article class="car-card featured" data-category="supercar" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/jesko-attack/1.jpg" alt="Koenigsegg Jesko Attack">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">HYPERCAR</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Koenigsegg Jesko Attack</h3>
+                    <p class="card-desc">Track-focused monster chasing records</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">1600 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.3s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">330 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- LaFerrari -->
+            <article class="car-card featured" data-category="supercar" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/laferrari/1.jpg" alt="Ferrari LaFerrari">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">HYPERCAR</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Ferrari LaFerrari</h3>
+                    <p class="card-desc">The definitive Ferrari, a true legend</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">950 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.6s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">217 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Lamborghini Aventador SVJ 63 -->
+            <article class="car-card featured" data-category="supercar" data-aos="fade-up">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/aventador-svj-63/1.jpg" alt="Lamborghini Aventador SVJ 63">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">LIMITED</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Aventador SVJ 63</h3>
+                    <p class="card-desc">Nürburgring record holder, only 63 made</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">770 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.8s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">217 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Audi RS6 -->
+            <article class="car-card" data-category="tuned" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/audi-rs6/1.jpg" alt="Audi RS6 Avant">
+                    <div class="card-overlay">
+                        <span class="card-badge tuned">PERFORMANCE</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Audi RS6 Avant</h3>
+                    <p class="card-desc">The ultimate super wagon experience</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">621 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">3.4s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">190 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Porsche 918 Spyder -->
+            <article class="car-card featured" data-category="supercar" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/porsche-918/1.jpg" alt="Porsche 918 Spyder">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">HYPERCAR</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Porsche 918 Spyder</h3>
+                    <p class="card-desc">Hybrid hypercar that changed everything</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">887 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.5s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">214 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Lamborghini Veneno Roadster -->
+            <article class="car-card featured" data-category="supercar" data-aos="fade-up">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/veneno-roadster/1.jpg" alt="Lamborghini Veneno Roadster">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">ULTRA RARE</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Veneno Roadster</h3>
+                    <p class="card-desc">$4.5M fighter jet for the road</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">750 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.9s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">221 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Bugatti Pur Sport -->
+            <article class="car-card featured" data-category="supercar" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/bugatti-pur-sport/1.jpg" alt="Bugatti Chiron Pur Sport">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">HYPERCAR</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Bugatti Chiron Pur Sport</h3>
+                    <p class="card-desc">Track-focused Chiron, pure driving art</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">1500 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.3s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">261 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Lamborghini Urus -->
+            <article class="car-card" data-category="luxury" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/lamborghini-urus/1.jpg" alt="Lamborghini Urus">
+                    <div class="card-overlay">
+                        <span class="card-badge luxury">SUPER SUV</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Lamborghini Urus</h3>
+                    <p class="card-desc">World's first Super Sport Utility Vehicle</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">657 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">3.5s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">190 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Lamborghini Huracan -->
+            <article class="car-card" data-category="supercar" data-aos="fade-up">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/lamborghini-huracan/1.jpg" alt="Lamborghini Huracán">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">SUPERCAR</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Lamborghini Huracán</h3>
+                    <p class="card-desc">V10 symphony, everyday supercar</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">640 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">2.9s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">202 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Maybach GLS 600 -->
+            <article class="car-card" data-category="luxury" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/maybach-gls-600/1.jpg" alt="Maybach GLS 600">
+                    <div class="card-overlay">
+                        <span class="card-badge luxury">ULTRA LUXURY</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Maybach GLS 600</h3>
+                    <p class="card-desc">Private jet luxury on wheels</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">558 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">4.8s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">155 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Maybach S580 -->
+            <article class="car-card" data-category="luxury" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/maybach-s580/1.jpg" alt="Maybach S580">
+                    <div class="card-overlay">
+                        <span class="card-badge luxury">ULTRA LUXURY</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Maybach S580</h3>
+                    <p class="card-desc">The pinnacle of automotive luxury</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">503 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">4.7s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">155 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+
+            <!-- Porsche 992 GT3 RS -->
+            <article class="car-card featured" data-category="supercar" data-aos="fade-up">
+                <div class="card-glow"></div>
+                <div class="card-image">
+                    <img class="car-img" src="images/cars/porsche-gt3-rs/1.jpg" alt="Porsche 992 GT3 RS">
+                    <div class="card-overlay">
+                        <span class="card-badge supercar">TRACK</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Porsche 992 GT3 RS</h3>
+                    <p class="card-desc">Race car with license plates</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">POWER</span>
+                            <span class="stat-val">518 HP</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">0-60</span>
+                            <span class="stat-val">3.0s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TOP</span>
+                            <span class="stat-val">184 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-shine"></div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Featured Marquee -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>KOENIGSEGG</span>
+                <span class="dot">—</span>
+                <span>BUGATTI</span>
+                <span class="dot">—</span>
+                <span>LAMBORGHINI</span>
+                <span class="dot">—</span>
+                <span>FERRARI</span>
+                <span class="dot">—</span>
+                <span>PORSCHE</span>
+                <span class="dot">—</span>
+                <span>MCLAREN</span>
+                <span class="dot">—</span>
+                <span>MANSORY</span>
+                <span class="dot">—</span>
+                <span>MAYBACH</span>
+                <span class="dot">—</span>
+                <span>KOENIGSEGG</span>
+                <span class="dot">—</span>
+                <span>BUGATTI</span>
+                <span class="dot">—</span>
+                <span>LAMBORGHINI</span>
+                <span class="dot">—</span>
+                <span>FERRARI</span>
+                <span class="dot">—</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">RINNAE<span class="accent">MOTORS</span></span>
+            </div>
+            <p class="footer-tagline">Where Dreams Meet Horsepower</p>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="copyright">© 2026 RINNAE MOTORS. All rights reserved.</p>
+        </div>
+        <div class="footer-bg"></div>
+    </footer>
+
+    <!-- Car Modal -->
+    <div class="modal" id="carModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <div class="modal-body">
+                <div class="modal-image" id="modalImage"></div>
+                <div class="modal-info">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-desc" id="modalDesc"></p>
+                    <div class="modal-stats" id="modalStats"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
