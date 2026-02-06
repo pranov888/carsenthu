@@ -25,6 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
 function initLoader() {
     const loader = document.getElementById('loader');
     const speedValue = document.querySelector('.speed-value');
+
+    // Exit early if loader elements don't exist (e.g., on profile pages)
+    if (!loader || !speedValue) return;
+
     let speed = 0;
 
     // Animate speed counter
@@ -130,7 +134,7 @@ function initNavigation() {
 
     // Mobile menu toggle
     navToggle?.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        navLinks?.classList.toggle('active');
         navToggle.classList.toggle('active');
     });
 
